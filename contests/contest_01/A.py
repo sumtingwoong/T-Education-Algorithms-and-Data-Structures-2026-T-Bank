@@ -1,10 +1,10 @@
-nk = list(map(int, input().split()))
+n, k = map(int, input().split())
 elements = list(map(int, input().split()))
 questions = list(map(int, input().split()))
 
 for i in questions:
     left = 0
-    right = nk[0] - 1
+    right = n - 1
     flag = False
     while left <= right:
         mid = (left + right) // 2
